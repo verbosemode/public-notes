@@ -36,7 +36,7 @@ Just extract the ZIP file to c:\nssm
 
 ### Prepare the directory structure
 
-        REM Base install dir
+	REM Base install dir
 	md c:\logstash
 	REM Extract Logstash to this directory
 	md c:\logstash\install
@@ -57,7 +57,7 @@ Just extract the ZIP file to c:\nssm
 	REM Replace stdout and stderr files
 	nssm set logstash AppStdoutCreationDisposition 2
 	nssm set logstash AppStderrCreationDisposition 2
-	REM Disable WM_CLOSE, WM_QUIT in the Shutdown options
+	REM Disable WM_CLOSE, WM_QUIT in the Shutdown options. Without it, NSSM can't stop Logstash properly
 	nssm set logstash AppStopMethodSkip 6
 	REM Let's start Logstash. I assume a correct configuration is already in place
 	net start logstash
