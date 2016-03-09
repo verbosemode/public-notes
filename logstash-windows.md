@@ -72,10 +72,10 @@ Just extract the ZIP file to `C:\NSSM`
 
 ### Is Java (64bit) installed correctly?
 
-  C:\Java\jre\bin\Java -version
-  Java version "1.7.0_60"
-  Java(TM) SE Runtime Environment (build 1.7.0_60-b19)
-  Java HotSpot(TM) 64-Bit Server VM (build 24.60-b09, mixed mode)
+    C:\Java\jre\bin\Java -version
+    Java version "1.7.0_60"
+    Java(TM) SE Runtime Environment (build 1.7.0_60-b19)
+    Java HotSpot(TM) 64-Bit Server VM (build 24.60-b09, mixed mode)
 
 ### Test reading Security event logs on Windows
 
