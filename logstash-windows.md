@@ -5,7 +5,7 @@ I'm using this setup primarily for shipping logs from Windows servers via Logsta
 
 This setup is tested with the following software versions:
 
-* Logstash 1.5.2
+* Logstash 5.0.0
 * Windows 2008 R2 / Windows 2012 R2
 * Java JRE 8 64bit
 * NSSM 2.24 64bit
@@ -45,7 +45,7 @@ Just extract the ZIP file to `C:\NSSM`
 
     CD C:\NSSM\win64
     NSSM install logstash C:\Logstash\install\bin\Logstash.bat
-    NSSM set logstash AppParameters agent --config C:\Logstash\conf.d
+    NSSM set logstash AppParameters --config C:\Logstash\conf.d
     NSSM set logstash AppDirectory C:\Logstash\install
     NSSM set logstash AppEnvironmentExtra "Java_HOME=C:\Java\jre"
     NSSM set logstash AppStdout C:\Logstash\NSSM\stdout.log
